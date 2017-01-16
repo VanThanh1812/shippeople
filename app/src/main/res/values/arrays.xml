@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notification_tab_title_arr">
+        <item>Thông báo</item>
+        <item>Đơn hàng đã xem</item>
+    </string-array>
+</resources>

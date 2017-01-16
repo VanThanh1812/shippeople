@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shipfindpeople.app.fragment.NotificationTabFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_data_binding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical" />
+
+    <include layout="@layout/progress_bar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không có internet"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reload"
+            android:textColor="@android:color/white"
+            android:id="@+id/bt_reload"
+            android:layout_marginTop="20dp"
+            android:layout_alignTop="@+id/tv_notify"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

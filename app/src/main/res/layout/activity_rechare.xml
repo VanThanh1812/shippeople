@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="20dp"
+    tools:context="com.shipfindpeople.app.activity.RechargeActivity">
+
+    <Spinner
+        android:id="@+id/card_type_spinner"
+        style="@style/SpinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:minHeight="35dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/card_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_type_spinner"
+        android:layout_marginTop="5dp"
+        android:theme="@style/FloatingHintLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/card_code_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:hint="Mã thẻ"
+            android:imeOptions="actionNext" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/card_seri_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_code_layout"
+        android:layout_marginTop="5dp"
+        android:theme="@style/FloatingHintLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/card_serial_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:hint="Số seri"
+            android:imeOptions="actionNext" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit_card_info_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_seri_layout"
+        android:layout_marginTop="15dp"
+        android:text="Nạp thẻ" />
+
+    <TextView
+        android:id="@+id/warning_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit_card_info_btn"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+
+
+    <TextView
+        android:id="@+id/package_link_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/warning_tv"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:text="Các gói cước gia hạn"
+        android:textSize="16sp" />
+
+</RelativeLayout>

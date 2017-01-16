@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ship Tìm Người - Người Tìm Ship</string>
+    <string name="facebook_app_id">1111920955570370</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">b55e120d0aa91e5e26b2a3f2f9623028</string>
+    <string name="confirm_phone_number_message">Bạn vui lòng xác thực số điện thoại để sử dụng ứng dụng</string>
+    <string name="reload">Reload</string>
+</resources>

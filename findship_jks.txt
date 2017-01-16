@@ -1,0 +1,3 @@
+Key alias: ShipFindPeople
+Key store pass: com.shipfindpeople.app
+Key pass: com.shipfindpeople.app
